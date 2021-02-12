@@ -1,0 +1,199 @@
+body.active {
+  overflow: hidden;
+}
+
+.intro_wrapper {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(../images/gelenvagen-3840x2160-gelik-vnedorojnik-mersedes-2364.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.intro_wrapper.block_hidden {
+  height: 0;
+  overflow: hidden;
+}
+
+.intro_wrapper .container_intro {
+  width: 400px;
+  text-align: center;
+}
+
+.intro_wrapper .container_intro h1 {
+  color: white;
+}
+
+.intro_wrapper .container_intro #game_values {
+  margin: 50px 0;
+}
+
+.intro_wrapper .container_intro #submit {
+  margin: 50px 0;
+}
+
+.game_wrapper {
+  width: 100%;
+  height: 0;
+  background: url(../images/4c7d044ffc2ae394d9f8bf2f0c961d25.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.game_wrapper.active {
+  height: auto;
+  padding: 200px 0;
+}
+
+.game_wrapper .result {
+  position: fixed;
+  width: 100%;
+  height: 0;
+  background: white;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  top: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  left: 0;
+}
+
+.game_wrapper .result.active {
+  height: 100%;
+}
+
+.game_wrapper .winner_holder {
+  width: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  position: fixed;
+  left: 0;
+  z-index: 200;
+  height: 0;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game_wrapper .winner_holder.active {
+  width: 100%;
+  background: white;
+  height: 100vh;
+}
+
+.game_wrapper .card_wrapper {
+  width: 900px;
+  background: rgba(255, 255, 255, 0.541);
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
+  position: relative;
+}
+
+.game_wrapper .card_wrapper .question_area {
+  width: 100%;
+  height: 100px;
+  -webkit-box-shadow: 0 5px 8px -2px black;
+          box-shadow: 0 5px 8px -2px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game_wrapper .card_wrapper .timer {
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  position: absolute;
+  right: 0;
+  top: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: rgba(78, 78, 180, 0.747);
+}
+
+.game_wrapper .card_wrapper .cards_area {
+  width: 100%;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.game_wrapper .card_wrapper .cards_area .box {
+  width: 90px;
+  height: 90px;
+  background: rgba(255, 255, 255, 0.603);
+  -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  margin-right: 70px;
+  margin-bottom: 30px;
+  outline: none;
+  border: none;
+}
+
+.game_wrapper .card_wrapper .cards_area .box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+/*# sourceMappingURL=main.css.map */
